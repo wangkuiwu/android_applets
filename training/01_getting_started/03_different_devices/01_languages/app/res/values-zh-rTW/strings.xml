@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">多語言測試</string>
+    <string name="tv_text">測試文本</string>
+</resources>
