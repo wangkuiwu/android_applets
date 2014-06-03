@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JumpTest</string>
+    <string name="jump">Jump To Another Activity</string>
+    <string name="map">Jump To Map</string>
+    <string name="web">Jump To WebPage</string>
+    <string name="email">Jump To Email</string>
+    <string name="calendar">Jump to Calendar</string>
+</resources>
