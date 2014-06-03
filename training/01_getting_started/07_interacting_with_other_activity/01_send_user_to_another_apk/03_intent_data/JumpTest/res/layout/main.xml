@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <Button
+        android:id="@+id/bt_jump"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jump"
+        />
+
+    <Button
+        android:id="@+id/bt_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/map"
+        />
+
+    <Button
+        android:id="@+id/bt_web"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/web"
+        />
+
+    <Button
+        android:id="@+id/bt_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        />
+
+    <Button
+        android:id="@+id/bt_calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar"
+        />
+
+</LinearLayout>
+
