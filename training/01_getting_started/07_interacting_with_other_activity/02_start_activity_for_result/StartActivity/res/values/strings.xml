@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StartActivity</string>
+    <string name="start1">Start Activity1</string>
+    <string name="start2">Start Activity2</string>
+    <string name="ret">Return</string>
+</resources>
