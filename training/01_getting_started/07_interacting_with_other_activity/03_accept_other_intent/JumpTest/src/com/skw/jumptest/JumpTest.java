@@ -11,7 +11,6 @@ import android.view.View.OnClickListener;
 public class JumpTest extends Activity 
     implements View.OnClickListener {
 
-    private static final String ACTION_JUMP = "com.skw.jumptest.JumpAction";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +26,10 @@ public class JumpTest extends Activity
     }
 
     private void jump() {
-        Intent intent = new Intent(ACTION_JUMP);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_TEXT, "Hahaha, you've been tricked!");
+        intent.setType("text/plain");
         startActivity(intent);
-    }
+    }   
 }

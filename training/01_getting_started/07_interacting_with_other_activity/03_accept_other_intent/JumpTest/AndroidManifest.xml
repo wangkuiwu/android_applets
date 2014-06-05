@@ -14,10 +14,12 @@
 
         <activity android:name="DestinationActivity" >
             <intent-filter>
-                <action android:name="com.skw.jumptest.JumpAction" />
+                <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/*"/>
             </intent-filter>
         </activity>
- 
+
     </application>
 </manifest>
