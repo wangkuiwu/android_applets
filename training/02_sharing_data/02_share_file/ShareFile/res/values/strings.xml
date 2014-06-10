@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShareFile</string>
+
+    <string name="select">select image</string>
+    <string name="choose">choose</string>
+</resources>
