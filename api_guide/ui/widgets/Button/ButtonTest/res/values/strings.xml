@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ButtonTest</string>
+
+    <string name="intro">Different Style of Buttons</string>
+    <string name="bt_simple">Simple</string>
+    <string name="bt_sync">Sync</string>
+    <string name="bt_style">Android Style</string>
+    <string name="bt_diy">DIY Style</string>
+    <string name="bt_self">DIY Backgroud</string>
+    <string name="bt_send">SendMessage</string>
+    <string name="bt_post">PostMessage</string>
+    <string name="bt_transmit">TransmitMessage</string>
+</resources>

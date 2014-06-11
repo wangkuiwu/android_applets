@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro"
+        />
+
+    <!-- 简单的按钮，字体为12sp -->
+    <Button
+        android:id="@+id/bt_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/bt_simple"
+        />
+
+    <!-- 使用Android自带style的按钮 -->
+    <!-- 注意：需要在manifest中定义"主题"才生效！ -->
+    <Button
+        android:id="@+id/bt_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_style"
+        style="?android:attr/borderlessButtonStyle"
+        android:textSize="12sp"
+        />
+
+    <!-- 自定义图片的按钮 -->
+    <Button
+        android:id="@+id/bt_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_sync"
+        android:background="@drawable/button_custom"
+        android:textSize="12sp"
+        />
+
+    <!-- 自定义的按钮1: 渐变圆角矩形 -->
+    <Button
+        android:id="@+id/bt_diy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_diy"
+        android:background="@drawable/button_style1"
+        android:textSize="12sp"
+        />
+
+    <!-- 自定义的按钮2: 实心圆角矩形 -->
+    <Button
+        android:id="@+id/bt_diy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_diy"
+        android:background="@drawable/button_style2"
+        android:textSize="12sp"
+        />
+
+
+    <!-- 以下是按钮的响应的三种实现 -->
+    <!-- 实现1： 在资源文件中定义andriod:onClick的按钮 -->
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_send"
+        android:onClick="sendMessage"
+        android:textSize="12sp"
+        />
+
+    <!-- 实现2： 通过匿名内部类实现onClick的按钮 -->
+    <Button
+        android:id="@+id/bt_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_post"
+        android:textSize="12sp"
+        />
+
+    <!-- 实现3： 通过Activity实现onClick的按钮 -->
+    <Button
+        android:id="@+id/bt_transmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_transmit"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>

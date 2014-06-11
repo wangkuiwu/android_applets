@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下的效果 -->
+    <item android:state_pressed="true">
+        <shape>
+            <!-- gradient表示渐变，startColor是起始色，endColor是结束色，
+                 type是线性渐变类型(默认类型)，angle是渐变角度 -->
+            <gradient android:startColor="#0e3264" android:endColor="#225193"
+                android:type="linear" android:angle="270" />
+            <!-- stroke是边缘颜色，width表示边缘宽度，color是边缘颜色 -->
+            <!-- stroke可用于实现边缘模糊，反光等效果 -->
+            <stroke android:width="2dip" android:color="#062249" />
+            <!-- corner是四个圆角的大小 -->
+            <corners android:radius="5dp" />
+            <!-- padding是按钮文字和边缘的距离 -->
+            <padding android:left="10dp" android:top="10dp"
+                android:right="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+ 
+    <!--获取焦点的效果 -->
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:startColor="#053b47" android:endColor="#146a7c"
+                android:angle="270" />
+            <stroke android:width="1dip" android:color="#02272f" />
+            <corners android:radius="5dp" />
+            <padding android:left="10dp" android:top="10dp"
+                android:right="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+ 
+    <!-- 默认效果 -->
+    <!-- 注意：默认效果没有stroke，而按钮效果有stroke；这样可以实现类似按下的动态效果 -->
+    <item>
+        <shape>
+            <gradient android:startColor="#275525" android:endColor="#75ac73"   
+                android:type="linear" android:angle="90"  
+                android:centerX="0.5" android:centerY="0.5" />  
+            <corners android:radius="5dip" />
+            <padding android:left="10dp" android:top="10dp"
+                android:right="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+</selector>

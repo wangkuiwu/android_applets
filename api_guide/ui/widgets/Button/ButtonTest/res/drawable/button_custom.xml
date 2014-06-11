@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Android系统在处理下面的状态时，是按照它们定义的先后顺序进行处理的 -->
+
+    <!-- 按钮按下 -->
+    <item android:drawable="@drawable/ic_sync_red"
+          android:state_pressed="true" />
+
+    <!-- 按钮获取焦点 -->
+    <item android:drawable="@drawable/ic_sync_green"
+          android:state_focused="true" />
+
+    <!-- 默认 -->
+    <item android:drawable="@drawable/ic_sync_grey" />
+
+</selector>
