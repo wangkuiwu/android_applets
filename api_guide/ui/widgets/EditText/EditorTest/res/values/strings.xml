@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EditorTest</string>
+
+    <string name="intro">EditText Demo</string>
+    <string name="et_simple">this is a simple EditText</string>
+    <string name="et_num">this is a num EditText</string>
+    <string name="et_msg">this is a msg EditText</string>
+</resources>

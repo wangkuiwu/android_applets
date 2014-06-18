@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro"
+        />
+
+    <!-- 基本的EditText -->
+    <EditText
+        android:id="@+id/et_simple"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_simple" />
+
+    <!-- 指定输入文本类型，并规定具体能接收哪些文本 -->
+    <!-- (01) inputType为number，指定输入文本类型是数字
+         (02) digits规定了该编辑器能接收的文本 -->
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="1234567890.+-*/%\n()"
+        android:hint="@string/et_num" />
+
+    <!-- 输入法的回车按钮的文本 -->
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionSend"
+        android:hint="@string/et_msg" />
+
+</LinearLayout>
+
