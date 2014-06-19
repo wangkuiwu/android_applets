@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- search -->
+    <item android:id="@+id/delete"
+          android:title="@string/delete"
+          android:showAsAction="ifRoom" />
+
+    <!-- setting -->
+    <item android:id="@+id/share"
+          android:title="@string/share"
+          android:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/detail"
+          android:title="@string/detail"
+          android:showAsAction="ifRoom|withText" />
+
+</menu>
