@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToggleTest</string>
+
+    <string name="intro">this is a ToggleButton Test</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+</resources>
