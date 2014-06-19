@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CheckBoxTest</string>
+
+    <string name="intro">this is a CheckBox Test</string>
+    <string name="cb_simple">Simple</string>
+    <string name="cb_send">Send</string>
+</resources>
