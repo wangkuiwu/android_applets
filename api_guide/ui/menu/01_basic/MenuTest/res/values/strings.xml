@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MenuTest</string>
+
+    <string name="search">Search</string>
+    <string name="setting">Settings</string>
+    <string name="file">File</string>
+    <string name="create_new">Create</string>
+    <string name="open">Open</string>
+</resources>

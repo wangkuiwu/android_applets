@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- search -->
+    <item android:id="@+id/search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/search"
+          android:showAsAction="ifRoom" />
+
+    <!-- setting -->
+    <item android:id="@+id/setting"
+          android:title="@string/setting"
+          android:showAsAction="ifRoom|withText" />
+
+
+    <item android:id="@+id/file"
+          android:title="@string/file" >        
+        <!-- sub menu -->
+        <menu>
+            <item android:id="@+id/create_new"
+                android:title="@string/create_new" />
+            <item android:id="@+id/open"
+                android:title="@string/open" />
+        </menu>
+    </item>
+
+</menu>
