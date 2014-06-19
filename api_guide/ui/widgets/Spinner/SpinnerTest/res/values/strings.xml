@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpinnerTest</string>
+
+    <string name="intro">this is a Spinner Test</string>
+    <string name="planet">Planet</string>
+</resources>
