@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BarTest</string>
+
+    <string name="search">Search</string>
+    <string name="setting">Setting</string>
+    <string name="share">Share</string>
+    <string name="jump">Jump</string>
+
+    <string name="intro_fragA">this is Fragment A</string>
+    <string name="send">Send</string>
+    <string name="intro_fragB">this is Fragment B</string>
+    <string name="intro_fragC">this is Fragment C</string>
+</resources>
