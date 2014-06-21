@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- search -->
+    <item android:id="@+id/search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/search"
+          android:showAsAction="ifRoom" />
+
+    <!-- setting -->
+    <item android:id="@+id/setting"
+          android:title="@string/setting"
+          android:showAsAction="ifRoom|withText" />
+
+    <!-- share -->
+    <item android:id="@+id/share"
+          android:icon="@drawable/ic_action_share"
+          android:title="@string/share"
+          android:showAsAction="ifRoom" />
+
+</menu>
