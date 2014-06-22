@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NotificationTest</string>
+
+    <string name="intro">this is a Notification Test</string>
+    <string name="res_intro">this is Result Activity</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+</resources>
