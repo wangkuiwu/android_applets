@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SearchTest</string>
+    <string name="search_impl">SearchImpl</string>
+
+    <string name="app_label">SearchDemo</string>
+    <string name="search_hint">please input search text</string>
+    <string name="search">Search</string>
+</resources>
