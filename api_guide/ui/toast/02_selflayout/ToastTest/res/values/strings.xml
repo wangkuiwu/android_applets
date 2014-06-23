@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToastTest</string>
+    <string name="send">Send</string>
+    <string name="toast_intro">this is a Toast Layout</string>
+</resources>
