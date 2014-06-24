@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:text="Hello World, ViewTest"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:text="@string/send" />
+
+    <com.skw.viewtest.MyView
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:padding="10dip"
+        android:layout_margin="20dip"
+        />
+
+</LinearLayout>
+
