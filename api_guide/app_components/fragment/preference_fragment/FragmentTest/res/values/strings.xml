@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FragmentTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string-array name="pref_font_types">
+        <item>sans</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>Yahei</item>
+    </string-array>
+    <string-array name="pref_font_types_values">
+        <item>sans value</item>
+        <item>serif value</item>
+        <item>monospace value</item>
+        <item>Yahei value</item>
+    </string-array>
+</resources>
