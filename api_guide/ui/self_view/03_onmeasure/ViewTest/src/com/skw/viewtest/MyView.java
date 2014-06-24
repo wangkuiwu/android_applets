@@ -26,6 +26,7 @@ public class MyView extends View {
         mPaint.setColor(Color.GREEN);
         mPaint.setStyle(Style.FILL);  
         mPaint.setTextSize(35.0f);  
+        setPadding(20, 60, 0, 0);
     }
 
     @Override  
@@ -47,7 +48,10 @@ public class MyView extends View {
         default:  
             break;  
         }  
-        canvas.drawText(text, 10, 60, mPaint);  
+        //canvas.drawText(text, getPaddingTop(), getPaddingLeft(), mPaint);  
+        canvas.drawText(text, getLeft(), getTop(), mPaint);  
+        Log.d(TAG, "onDraw: padtop="+getPaddingTop()+", padleft="+getPaddingLeft());
+        Log.d(TAG, "onDraw: top="+getTop()+", left="+getLeft());
     }
   
     public void changeColor() { //为了让外面调用  
@@ -71,7 +75,9 @@ public class MyView extends View {
      */  
     @Override  
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {  
-        Log.d(TAG, "onMeasure");
+        Log.d(TAG, "onMeasure: EXACTLY="+MeasureSpec.EXACTLY
+                +", AT_MOST="+MeasureSpec.AT_MOST
+                +", UPSPECIFIED="+MeasureSpec.UNSPECIFIED);
         setMeasuredDimension(measureWidth(widthMeasureSpec), measureHeight(heightMeasureSpec));  
     }  
   
@@ -81,17 +87,15 @@ public class MyView extends View {
         int specSize = MeasureSpec.getSize(measureSpec);  
   
         if (specMode == MeasureSpec.EXACTLY) {  
-            // We were told how big to be  
             result = specSize;  
         } else {  
             // Measure the text  
             result = (int) mPaint.measureText(text) + getPaddingLeft() + getPaddingRight();  
             if (specMode == MeasureSpec.AT_MOST) {  
-                // Respect AT_MOST value if that was what is called for by  
-                // measureSpec  
-                result = Math.min(result, specSize);// 60,480  
+                result = Math.min(result, specSize);
             }  
         }  
+        Log.d(TAG, "measureWidth: specMode="+specMode+", specSize="+specSize+", result="+result);
   
         return result;  
     }  
@@ -102,8 +106,8 @@ public class MyView extends View {
         int specSize = MeasureSpec.getSize(measureSpec);
   
         int mAscent = (int) mPaint.ascent();  
+        Log.d(TAG, "measureHeight: specMode="+specMode+", specSize="+specSize);
         if (specMode == MeasureSpec.EXACTLY) {  
-            // We were told how big to be  
             result = specSize;  
         } else {  
             // Measure the text (beware: ascent is a negative number)  
@@ -114,6 +118,8 @@ public class MyView extends View {
                 result = Math.min(result, specSize);  
             }  
         }  
+        //result = specSize;  
+        Log.d(TAG, "measureHeight: mAscent="+mAscent+", mDescent="+mPaint.descent()+", result="+result);
         return result;  
     }
 }
