@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World, IntentTest"
+        />
+
+    <Button
+        android:id="@+id/btn_alarmclock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_clock"
+        android:onClick="sendMessage"
+        />
+
+    <Button
+        android:id="@+id/btn_countdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/countdown_time"
+        android:onClick="sendMessage"
+        />
+
+</LinearLayout>
+

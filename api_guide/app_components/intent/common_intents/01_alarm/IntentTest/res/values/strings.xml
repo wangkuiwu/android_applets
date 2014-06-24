@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntentTest</string>
+
+    <string name="alarm_clock">AlarmClock</string>
+    <string name="countdown_time">Countdown Timer</string>
+</resources>
