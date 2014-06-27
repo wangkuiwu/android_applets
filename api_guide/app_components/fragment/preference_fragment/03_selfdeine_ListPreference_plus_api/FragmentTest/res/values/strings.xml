@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FragmentTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string-array name="pref_font_types">
+        <item>sans</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>Yahei</item>
+    </string-array>
+    <string-array name="pref_font_types_values">
+        <item>sans value</item>
+        <item>serif value</item>
+        <item>monospace value</item>
+        <item>Yahei value</item>
+    </string-array>
+
+
+    <string-array name="android_versions">
+        <item>Cupcake</item>            
+        <item>Donut</item>              
+        <item>Eclair</item>             
+        <item>Froyo</item>              
+        <item>Gingerbread</item>        
+        <item>Honeycomb</item>          
+        <item>Ice Cream Sandwich</item> 
+    </string-array>            
+    <string-array name="android_version_values">
+        <item>15</item>
+        <item>16</item>
+        <item>20_21</item>              
+        <item>22</item>
+        <item>23</item>
+        <item>3</item> 
+        <item>4</item> 
+     </string-array>           
+     <string-array name="android_version_icons">
+        <item>@drawable/cupcake</item>  
+        <item>@drawable/donut</item>    
+        <item>@drawable/eclair</item>   
+        <item>@drawable/froyo</item>    
+        <item>@drawable/gingerbread</item>
+        <item>@drawable/honeycomb</item>
+        <item>@drawable/icecreamsandwich</item>
+     </string-array> 
+
+</resources>

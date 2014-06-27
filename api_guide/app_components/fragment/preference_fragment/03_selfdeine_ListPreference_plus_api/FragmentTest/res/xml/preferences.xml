@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iconlistpreference="http://schemas.android.com/apk/res/com.skw.fragmenttest">
+    
+    <!-- 系统默认的ListPreference -->
+    <PreferenceCategory
+        android:title="PreferenceCategory A">
+
+        <!-- 
+          (01) android:key是Preferece的id
+          (02) android:title是Preferece的大标题
+          (03) android:summary是Preferece的小标题
+          (04) android:dialogTitle是对话框的标题
+          (05) android:defaultValue是默认值
+          (06) android:entries是列表中各项的说明
+          (07) android:entryValues是列表中各项的值
+          -->
+        <ListPreference  
+            android:key="list_preference"  
+            android:dialogTitle="Choose font"  
+            android:entries="@array/pref_font_types"  
+            android:entryValues="@array/pref_font_types_values"  
+            android:summary="sans"  
+            android:title="Font" 
+            android:defaultValue="sans"/> 
+    </PreferenceCategory>
+
+    <!-- 自定义的ListPreference -->
+
+    <PreferenceCategory
+        android:title="PreferenceCategory B">
+
+        <!-- 
+          iconlistpreference:entryIcons是自定义的属性
+          -->
+        <com.skw.fragmenttest.IconListPreference
+            android:key="icon_list_preference"  
+            android:dialogTitle="ChooseIcon"  
+            android:icon="@drawable/cupcake"
+            android:entries="@array/android_versions"
+            android:entryValues="@array/android_version_values"  
+            android:summary="summary_icon_list_preference"
+            android:title="title_icon_list_preference" /> 
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
