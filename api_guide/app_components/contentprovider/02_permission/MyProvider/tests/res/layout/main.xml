@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World, ProviderTest"
+        />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        />
+
+    <Button
+        android:id="@+id/deleteFirst"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="deleteFirst"
+        />
+
+    <Button
+        android:id="@+id/deleteKate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="deleteKate"
+        />
+
+    <Button
+        android:id="@+id/deleteAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="deleteAll"
+        />
+
+
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="show All"
+        />
+
+</LinearLayout>
+
