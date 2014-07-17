@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下的效果 -->
+    <item android:state_pressed="true">
+        <!-- shape是圆角矩形 -->
+        <shape android:shape="rectangle">
+            <!-- corner是四个圆角的大小 -->
+            <corners android:radius="8dp"/>
+            <!-- solid指明该按钮是实心效果，而不是渐变等其他效果 -->
+            <solid android:color="#9a2424"/>
+            <!-- stroke是边缘颜色，width表示边缘宽度，color是边缘颜色 -->
+            <!-- stroke可用于实现边缘模糊，反光等效果 -->
+            <stroke android:width="2dip" android:color="#830a0a" />
+            <!-- padding是按钮文字和边缘的距离 -->
+            <padding android:bottom="5dp" android:left="5dp"
+                android:right="5dp" android:top="5dp"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dip"/>
+            <solid android:color="#d96e26"/>
+            <stroke android:width="2dip" android:color="#93420d" />
+            <padding android:bottom="5dp" android:left="5dp"
+                android:right="5dp" android:top="5dp"/>
+        </shape>
+    </item>
+
+    <!-- dashGap是虚线间隔。如果是0，则是实线 -->
+    <!-- width是线宽。-->
+    <!-- color是线的颜色 -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4dip"/>
+            <solid android:color="#000000"/>
+            <stroke
+                android:dashGap="0dp"
+                android:width="2dp"
+                android:color="@android:color/white" />
+        </shape>  
+    </item>
+</selector>

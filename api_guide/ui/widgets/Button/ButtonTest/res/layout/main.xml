@@ -61,6 +61,17 @@
         android:textSize="12sp"
         />
 
+    <!-- 自定义的按钮3: 空心圆角矩形 -->
+    <Button
+        android:id="@+id/bt_diy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_diy"
+        android:background="@drawable/button_style3"
+        android:textSize="12sp"
+        />
+
+
 
     <!-- 以下是按钮的响应的三种实现 -->
     <!-- 实现1： 在资源文件中定义andriod:onClick的按钮 -->
