@@ -42,6 +42,7 @@
 > **5.1.2**. [Fragment碎片](#anchor5_1_2)  
 > **5.2**. [Intent](#anchor5_2)  
 > **5.2.1**. [常用Intent](#anchor5_2_1)  
+> **5.3**. [ContentProvider](#anchor5_3)  
 
 
 <a name="anchor1"></a>
@@ -537,6 +538,16 @@ Android提供了两种内置的Activity查询组件：Search Dialog和Search Wid
 示例七：[网页][link_intent_common_07]
 
 
+<a name="anchor5_3"></a>
+## 3. ContentProvider
+
+示例一：[ContentProvider基本示例][link_contentprovidr_01]
+
+> [详细介绍](http://wangkuiwu.github.io/2014/07/06/ContentProvider-Usage/)
+
+示例二：[ContentProvider与Persmission绑定使用][link_contentprovidr_02]
+
+> [详细介绍](http://wangkuiwu.github.io/2014/07/06/ContentProvider-Permission/)
 
 
 
@@ -628,6 +639,8 @@ Android提供了两种内置的Activity查询组件：Search Dialog和Search Wid
 [link_intent_common_05]: https://github.com/wangkuiwu/android_applets/tree/master/api_guide/app_components/intent/common_intents/05_email
 [link_intent_common_06]: https://github.com/wangkuiwu/android_applets/tree/master/api_guide/app_components/intent/common_intents/06_gallery
 [link_intent_common_07]: https://github.com/wangkuiwu/android_applets/tree/master/api_guide/app_components/intent/common_intents/07_webview
+[link_contentprovidr_01]: https://github.com/wangkuiwu/android_applets/tree/master/api_guide/app_components/contentprovider/01_basic/MyProvider
+[link_contentprovidr_02]: https://github.com/wangkuiwu/android_applets/tree/master/api_guide/app_components/contentprovider/02_permission/MyProvider
 
 
 
