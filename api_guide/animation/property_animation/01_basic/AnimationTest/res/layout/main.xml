@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="run"
+        android:onClick="actionClick"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        > 
+
+        <!-- 对于MyView而言： layout_width是直径 -->
+        <com.skw.animationtest.MyView   
+            android:id="@+id/ball1"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            />
+
+        <com.skw.animationtest.MyView   
+            android:id="@+id/ball2"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            />
+
+        <com.skw.animationtest.MyView   
+            android:id="@+id/ball3"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            />
+
+        <com.skw.animationtest.MyView   
+            android:id="@+id/ball4"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            />
+
+        <com.skw.animationtest.MyView   
+            android:id="@+id/ball5"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dip"
+            />
+ 
+    </LinearLayout>
+</LinearLayout>
