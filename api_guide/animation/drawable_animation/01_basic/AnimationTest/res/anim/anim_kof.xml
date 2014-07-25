@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <!-- 
+        oneshot 表示是否循环播放。true表示不循环播放，否则就循环播放
+        drawable 是每一帧的图像资源
+        duration 是每一帧的显示时间(以ms为单位)
+    -->
+    <item android:drawable="@drawable/rkof" android:duration="200" />
+    <item android:drawable="@drawable/qkof" android:duration="200" />
+    <item android:drawable="@drawable/pkof" android:duration="200" />
+    <item android:drawable="@drawable/okof" android:duration="200" />
+    <item android:drawable="@drawable/nkof" android:duration="200" />
+    <item android:drawable="@drawable/mkof" android:duration="200" />
+    <item android:drawable="@drawable/lkof" android:duration="200" />
+    <item android:drawable="@drawable/kkof" android:duration="200" />
+    <item android:drawable="@drawable/jkof" android:duration="200" />
+    <item android:drawable="@drawable/ikof" android:duration="200" />
+    <item android:drawable="@drawable/hkof" android:duration="200" />
+    <item android:drawable="@drawable/gkof" android:duration="200" />
+    <item android:drawable="@drawable/fkof" android:duration="200" />
+    <item android:drawable="@drawable/ekof" android:duration="200" />
+    <item android:drawable="@drawable/dkof" android:duration="200" />
+    <item android:drawable="@drawable/ckof" android:duration="200" />
+    <item android:drawable="@drawable/bkof" android:duration="200" />
+    <item android:drawable="@drawable/akof" android:duration="200" />
+</animation-list>
