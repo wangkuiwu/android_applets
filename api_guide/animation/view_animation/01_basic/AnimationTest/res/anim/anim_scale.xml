@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 
+        缩放动画
+
+        1. interpolator : 变化类型。
+           accelerate_decelerate_interpolator表示先加速后减速(先快后慢)。
+           accelerate_interpolator表示加速(越来越快)。
+           decelerate_interpolator表示减速(越来越慢)。
+
+        2. fromXScale : 动画起始时 X坐标上的伸缩尺寸
+        3. toXScale   : 动画结束时 X坐标上的伸缩尺寸
+        4. fromYScale : 动画起始时 Y坐标上的伸缩尺寸
+        5. toYScale   : 动画结束时 Y坐标上的伸缩尺寸
+        6. pivotX     : 动画相对于物件的X坐标的开始位置(百分比)
+        7. pivotY     : 动画相对于物件的Y坐标的开始位置(百分比)
+
+        8. fillAfter  : 当设置为true，该动画转化在动画结束后被应用
+        9. duration   : 动画持续时间
+ 
+    -->
+    <scale
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:fromXScale="0.0"
+        android:toXScale="2.0"
+        android:fromYScale="0.0"
+        android:toYScale="2.0"
+        android:pivotX="50%" 
+        android:pivotY="50%"
+        android:fillAfter="false"
+        android:duration="1000" />
+
+</set>
+

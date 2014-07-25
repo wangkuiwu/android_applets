@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 
+        旋转动画
+
+        1. interpolator : 变化类型。
+           accelerate_decelerate_interpolator表示先加速后减速(先快后慢)。
+           accelerate_interpolator表示加速(越来越快)。
+           decelerate_interpolator表示减速(越来越慢)。
+
+        2. fromDegrees : 动画起始时的角度    
+        3. toDegrees   : 动画结束时的角度    
+           当角度为负数——表示逆时针旋转
+           当角度为正数——表示顺时针旋转   
+           角度可以大于360。
+
+        4. pivotX ： 动画相对于物件的X坐标的开始位置(百分比)
+        5. pivotY ： 动画相对于物件的Y坐标的开始位置(百分比)
+
+        6. duration: 动画持续时间
+    -->
+    <rotate
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:fromDegrees="0" 
+        android:toDegrees="360"
+        android:pivotX="50%"   
+        android:pivotY="50%"     
+        android:duration="3000" />
+
+</set>
+

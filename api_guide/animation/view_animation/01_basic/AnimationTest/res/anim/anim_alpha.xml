@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:startOffset="2000" >
+    <!-- 透明度控制动画效果 alpha(float类型)
+         fromAlpha : 动画起始时透明度(0.0~1.0之间，0.0是完全透明，1.0是完全不透明)
+         toAlpha   : 动画结束时透明度(0.0~1.0之间，0.0是完全透明，1.0是完全不透明)
+         duration  : 动画的总时间(以ms为单位)。默认为300ms
+         startOffset : 动画开始的延时 (以ms为单位)
+    -->
+    <alpha
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0"
+        android:duration="2000"
+        />
+
+</set>

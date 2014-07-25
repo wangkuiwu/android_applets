@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 
+        移动
+
+        1. fromXDelta : 变化类型。
+           accelerate_decelerate_interpolator表示先加速后减速(先快后慢)。
+           accelerate_interpolator表示加速(越来越快)。
+           decelerate_interpolator表示减速(越来越慢)。
+        2. fromXDelta : 动画起始时 X坐标上的伸缩尺寸(参考点为视图的左上角顶点)
+        3. toXDelta   : 动画结束时 X坐标上的伸缩尺寸(参考点为视图的左上角顶点)
+        4. fromYDelta : 动画起始时 Y坐标上的伸缩尺寸(参考点为视图的左上角顶点)
+        5. toYDelta   : 动画结束时 Y坐标上的伸缩尺寸(参考点为视图的左上角顶点)
+        5. duration   : 动画持续时间
+ 
+    -->
+
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="100"
+        android:fromYDelta="0"
+        android:toYDelta="100"
+        android:duration="2000" />
+
+</set>
+
+
