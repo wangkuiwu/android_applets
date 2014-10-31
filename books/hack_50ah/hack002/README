@@ -1,0 +1,11 @@
+
+说明： ViewStub的使用示例。
+
+ViewStub是个惰性装载控件控件。该控件包含android:inflatedId和android:layout两个重要的属性。
+
+1. android:layout是用来指定ViewStub所包含的Layout布局文件。
+  调用inflate()会显示该Layout布局。
+
+2. android:inflatedId是用来指定Layout的ID。
+
+
