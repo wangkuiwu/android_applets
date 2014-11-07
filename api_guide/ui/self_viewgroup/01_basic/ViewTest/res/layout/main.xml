@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f0f0"
+    tools:context=".MainActivity" >
+
+    <com.skw.viewtest.MyGroupView
+        android:id="@+id/myViewGroup"
+        android:layout_width="480dp"
+        android:layout_height="300dp"
+        android:background="#0f0f0f" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="First TextView" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="Second TextView" />
+    </com.skw.viewtest.MyGroupView>
+
+</RelativeLayout>
