@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f0f0"
+    tools:context=".MainActivity" >
+
+    <com.skw.viewtest.DragGroupView
+        android:id="@+id/myViewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0f0f0f" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="First" />
+
+        <Button
+            android:id="@+id/tip"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#00ff00"
+            android:gravity="center"
+            android:text="Second" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="Third" />
+
+    </com.skw.viewtest.DragGroupView>
+
+</RelativeLayout>
