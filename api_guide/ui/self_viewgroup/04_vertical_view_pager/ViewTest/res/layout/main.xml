@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f0f0"
+    tools:context=".MainActivity" >
+
+    <com.skw.viewtest.VerticalTabView
+        android:id="@+id/myViewGroup"
+        android:layout_width="60dip"
+        android:layout_height="match_parent"
+        android:background="#88ffffff" 
+        >
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff00"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#450a5a"
+            android:gravity="center"
+            android:text="4" />
+
+    </com.skw.viewtest.VerticalTabView>
+    <!--
+    -->
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignTop="@id/myViewGroup"
+        android:layout_alignParentRight="true"
+        android:text="UP"
+        />
+    <Button
+        android:id="@+id/downBtn"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/upBtn"
+        android:layout_alignRight="@id/upBtn"
+        android:text="Down"
+        />
+    <Button
+        android:id="@+id/jumpBtn"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/downBtn"
+        android:layout_alignRight="@id/downBtn"
+        android:text="Jump"
+        />
+
+</RelativeLayout>
