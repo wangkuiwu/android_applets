@@ -30,8 +30,8 @@ import android.view.MotionEvent;
  *         2.onTouchEvent
  *
  */
-public class EventTest extends Activity {
-    private static final String TAG = "##skywang-Activity";
+public class MyActivity extends Activity {
+    private static final String TAG = "##skywang-MyActivity";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
