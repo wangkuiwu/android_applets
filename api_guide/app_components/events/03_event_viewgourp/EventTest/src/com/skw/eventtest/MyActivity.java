@@ -7,7 +7,9 @@ import android.view.MotionEvent;
 
 /**
  * Activity, ViewGroup, View的触摸事件测试程序。
- * 说明：它们都是调用的默认方法。
+ * 说明：MyViewGroup拦截，但是却没有消费触摸事件。
+ *     即，MyViewGroup.onInterceptTouchEvent()返回true。
+ *     而，MyViewGroup.onTouchEvent()返回false。
  */
 public class MyActivity extends Activity {
     private static final String TAG = "##skywang-MyActivity";

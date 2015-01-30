@@ -7,7 +7,9 @@ import android.view.MotionEvent;
 
 /**
  * Activity, ViewGroup, View的触摸事件测试程序。
- * 说明：它们都是调用的默认方法。
+ * 说明：MyView消费了触摸事件。
+ *     即，MyView.onTouchEvent()返回true。
+ *
  */
 public class MyActivity extends Activity {
     private static final String TAG = "##skywang-MyActivity";

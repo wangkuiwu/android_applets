@@ -1,21 +1,20 @@
 package com.skw.eventtest;
 
-import android.app.Activity;
-import android.os.Bundle;
+import android.content.Context;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.View;
 
-/**
- * Activity, ViewGroup, View的触摸事件测试程序。
- * 说明：它们都是调用的默认方法。
- */
-public class MyActivity extends Activity {
-    private static final String TAG = "##skywang-MyActivity";
+public class MyView extends View {
+    private static final String TAG = "##skywang-MyView";
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+    public MyView(Context context) {
+        super(context);
+    }
+    
+    public MyView(Context context, AttributeSet attrs) {
+        super(context, attrs);
     }
  
     @Override

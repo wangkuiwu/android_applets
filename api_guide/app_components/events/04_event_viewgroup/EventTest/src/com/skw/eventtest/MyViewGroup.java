@@ -10,14 +10,14 @@ import android.widget.LinearLayout;
 import android.util.AttributeSet;
 import android.util.Log;
 
-public class MyGroupView extends LinearLayout {
-    private static final String TAG = "##skywang-MyGroupView";
+public class MyViewGroup extends LinearLayout {
+    private static final String TAG = "##skywang-MyViewGroup";
     
-    public MyGroupView(Context context){
+    public MyViewGroup(Context context){
         super(context);
     }
     
-    public MyGroupView(Context context, AttributeSet attrs) {
+    public MyViewGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
  
@@ -34,7 +34,8 @@ public class MyGroupView extends LinearLayout {
     public boolean onTouchEvent(MotionEvent event) {
         String actionName = Utils.getActionName(event);
         Log.d(TAG, "onTouchEvent(start) :"+actionName);
-        boolean ret = super.onTouchEvent(event);
+        // boolean ret = super.onTouchEvent(event);
+        boolean ret = true;
         Log.d(TAG, "onTouchEvent( end ) :"+actionName+", ret="+ret);
         return ret;
     }
@@ -43,7 +44,8 @@ public class MyGroupView extends LinearLayout {
     public boolean onInterceptTouchEvent(MotionEvent event) {
         String actionName = Utils.getActionName(event);
         Log.d(TAG, "onInterceptTouchEvent(start) :"+actionName);
-        boolean ret = super.onInterceptTouchEvent(event);
+        // boolean ret = super.onInterceptTouchEvent(event);
+        boolean ret = true;
         Log.d(TAG, "onInterceptTouchEvent( end ) :"+actionName+", ret="+ret);
         return ret;
     }
