@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:text="marque"
+        android:textColor="#ff000000"
+        android:textSize="24dp" />
+
+    <!-- 跑马灯效果 -->
+    <TextView
+        android:id="@+id/tv_marque"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee" 
+        android:singleLine="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textSize="24dp"
+        android:text="123+234-535435*28/234-345/2234/234123+234-535435*28/234-345/2234/234123+234-535435*28/234-345/2234/234+123+234-535435*28/234-345/2234/234+345982+34/543-89+797+46=135123" />
+
+    <!-- 跑马灯效果 -->
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="input here" />
+
+</LinearLayout>
+
