@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ff397cbf" />
+    <corners android:radius="4dp" />
+    <!-- 上下边缘都是2dp，且颜色与背景色一样
+         保证了SeekBar中thumb的高度 > SeekBar的高度 -->
+    <stroke                    
+        android:width="2dp"
+        android:color="#ffffffff" />
+</shape>

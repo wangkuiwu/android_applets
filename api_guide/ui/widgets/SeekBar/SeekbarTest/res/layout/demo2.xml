@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Progress" />
+
+    <!-- 
+        max=100,代表它的取值范围是0-100,共101个值;
+        progress=10,代表默认值是10  
+    -->
+    <SeekBar
+        android:id="@+id/seekbar_def"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:progressDrawable="@drawable/seekbar_self"
+        android:thumb="@drawable/seekbar_self_thumb"
+        android:max="100"
+        android:progress="10" />
+
+</LinearLayout>
