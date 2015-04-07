@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+
+    <item>
+        <!-- 
+             android:innerRadiusRatio="8" 表示"圆环半径=圆环宽度/8"
+             android:thicknessRatio="10" 表示"圆环厚度=圆环宽度/10"
+         -->
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="8"
+            android:thicknessRatio="10"
+            android:useLevel="false" >
+            <solid android:color="#660000" />
+            <size
+                android:height="32dip"
+                android:width="32dip" />
+        </shape>
+    </item>
+</layer-list>
