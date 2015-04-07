@@ -1,19 +1,18 @@
-package com.skw.seekbartest;
+package com.skw.linearlayouttest;
 
 import android.os.Bundle;
 import android.app.Activity;
 
 /**
- * 使用图片来绘制SeekBar
+ * 演示Linearlayout的基本用法
  *
  * @author skywang
  * @e-mail kuiwu-wang@163.com
  */
-public class Demo3 extends Activity {
+public class Demo1 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demo3);
-    }    
+        setContentView(R.layout.demo1);
+    }        
 }
-

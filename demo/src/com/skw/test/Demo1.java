@@ -1,19 +1,19 @@
-package com.skw.seekbartest;
+package com.skw.test;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 
 /**
- * 使用图片来绘制SeekBar
+ * 测试程序
  *
  * @author skywang
  * @e-mail kuiwu-wang@163.com
  */
-public class Demo3 extends Activity {
+public class Demo1 extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demo3);
-    }    
+        setContentView(R.layout.demo1);
+    }
 }
-

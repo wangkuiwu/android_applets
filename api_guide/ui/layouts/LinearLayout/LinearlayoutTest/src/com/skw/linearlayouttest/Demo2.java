@@ -1,19 +1,18 @@
-package com.skw.seekbartest;
+package com.skw.linearlayouttest;
 
 import android.os.Bundle;
 import android.app.Activity;
 
 /**
- * 使用图片来绘制SeekBar
+ * Linearlayout的weight和weightSum使用
  *
  * @author skywang
  * @e-mail kuiwu-wang@163.com
  */
-public class Demo3 extends Activity {
+public class Demo2 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demo3);
-    }    
+        setContentView(R.layout.demo2);
+    }        
 }
-

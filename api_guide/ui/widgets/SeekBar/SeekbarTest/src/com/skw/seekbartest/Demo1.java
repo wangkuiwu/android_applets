@@ -7,6 +7,12 @@ import android.widget.TextView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
+/**
+ * SeekBar的基本用法
+ *
+ * @author skywang
+ * @e-mail kuiwu-wang@163.com
+ */
 public class Demo1 extends Activity {
     private static final String TAG = "SKYWANG";
 
