@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- 旋转动作：旋转中心点是矩形中心。从0-360度进行旋转 -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:pivotX="50%" 
+    android:pivotY="50%" 
+    android:fromDegrees="0"
+    android:toDegrees="360">
+
+    <!-- ring表示是圆环类型
+         innerRadiusRatio=3表示"内圆环的半径=圆环的宽度/3"
+         thicknessRatio=8表示"内圆环的厚度=圆环的宽度/8"
+    -->
+    <shape android:shape="ring" 
+        android:innerRadiusRatio="3"
+        android:thicknessRatio="10"
+        android:useLevel="false">
+
+        <!-- 扫描渐变 -->
+        <gradient 
+            android:type="sweep"
+            android:useLevel="false" 
+            android:startColor="#222222"
+            android:centerColor="#666666"
+            android:endColor="#ffffff"
+            android:centerX="0.5"
+            android:centerY="0.5" />  
+    </shape>  
+</rotate>  

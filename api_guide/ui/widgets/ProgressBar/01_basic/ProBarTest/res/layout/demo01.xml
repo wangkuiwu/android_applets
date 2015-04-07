@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <!-- 
+    ProgressBar的style可以如下：
+    Widget.ProgressBar.Horizontal
+    Widget.ProgressBar.Small
+    Widget.ProgressBar.Large
+    Widget.ProgressBar.Inverse
+    Widget.ProgressBar.Small.Inverse
+    Widget.ProgressBar.Large.Inverse   
+    -->
+    <ProgressBar
+        android:id="@+id/pbar_def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="10" />
+
+</LinearLayout>
