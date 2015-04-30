@@ -28,7 +28,7 @@ public class LoaderTest extends FragmentActivity
     implements LoaderCallbacks<Cursor>, OnItemClickListener {
     private static final String TAG = "##LoaderTest##";
 
-    private Bitmap bitmap = null;
+    private Bitmap mBitmap = null;
     private byte[] mContent = null;
     
     private ListView listView = null;
@@ -127,8 +127,8 @@ public class LoaderTest extends FragmentActivity
                 dialog.dismiss();
                 
                 // 释放资源
-                if(bitmap != null){
-                    bitmap.recycle();
+                if(mBitmap != null){
+                    mBitmap.recycle();
                 }
             }
         });
@@ -141,8 +141,8 @@ public class LoaderTest extends FragmentActivity
         // 从Uri中读取图片资源
         try {
             mContent = file.readInputStream(resolver.openInputStream(Uri.parse(uri.toString())));
-            bitmap = file.getBitmapFromBytes(mContent, null);
-            ivImageShow.setImageBitmap(bitmap);
+            mBitmap = file.getBitmapFromBytes(mContent, null);
+            ivImageShow.setImageBitmap(mBitmap);
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
@@ -157,8 +157,8 @@ public class LoaderTest extends FragmentActivity
         super.onDestroy();
         
         Log.d(TAG, "onDestroy");
-        if(bitmap != null){
-            bitmap.recycle();
+        if(mBitmap != null){
+            mBitmap.recycle();
         }
     }
 }
