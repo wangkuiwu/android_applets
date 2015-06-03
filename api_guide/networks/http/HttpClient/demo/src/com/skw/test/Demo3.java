@@ -1,6 +1,5 @@
 package com.skw.test;
 
-import android.net.http.AndroidHttpClient;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -16,7 +15,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
 import android.widget.TextView;
 
 /**
@@ -25,7 +23,7 @@ import android.widget.TextView;
  * @author skywang
  * @e-mail kuiwu-wang@163.com
  */
-public class Demo2 extends Activity {
+public class Demo3 extends Activity {
 
     public static final int SHOW_RESPONSE = 0;
     
@@ -54,7 +52,7 @@ public class Demo2 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demo2);
+        setContentView(R.layout.demo3);
         textView_response = (TextView)findViewById(R.id.TextView1);
         button_sendRequest = (Button)findViewById(R.id.button1);
         
@@ -76,9 +74,7 @@ public class Demo2 extends Activity {
             @Override
             public void run() {
                 //用HttpClient发送请求，分为五步
-                // Toast.makeText(Demo2.this, "AndroidHttpClient", Toast.LENGTH_SHORT).show();
-                Log.d("http01", "AndroidHttpClient");
-                HttpClient httpCient = AndroidHttpClient.newInstance("");
+                HttpClient httpCient = new DefaultHttpClient();
                 HttpGet httpGet = new HttpGet("http://www.baidu.com");
                 
                 //放入请求头的内容，必须是以键值对的形式，这里以Accept-language为例
