@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * DefaultHttpClient测试程序
+ * DefaultHttpClient测试程序(Get获取数据)
  *
  * @author skywang
  * @e-mail kuiwu-wang@163.com
