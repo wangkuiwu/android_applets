@@ -100,6 +100,5 @@ public class Demo1 extends Activity {
                 
             }
         }).start();//这个start()方法不要忘记了        
-        
-    }    
+    }
 }

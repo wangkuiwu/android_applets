@@ -21,7 +21,6 @@ public class MainActivity extends Activity
         
         findViewById(R.id.btn_demo1).setOnClickListener(this);
         findViewById(R.id.btn_demo2).setOnClickListener(this);
-        findViewById(R.id.btn_demo3).setOnClickListener(this);
     }
         
     @Override
@@ -32,9 +31,6 @@ public class MainActivity extends Activity
             break;
         case R.id.btn_demo2:
             startActivity(new Intent(this, Demo2.class));
-            break;
-        case R.id.btn_demo3:
-            startActivity(new Intent(this, Demo3.class));
             break;
         }
     }

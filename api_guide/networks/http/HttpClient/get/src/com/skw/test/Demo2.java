@@ -81,9 +81,9 @@ public class Demo2 extends Activity {
                 HttpClient httpCient = AndroidHttpClient.newInstance("");
                 HttpGet httpGet = new HttpGet("http://www.baidu.com");
                 
-                //放入请求头的内容，必须是以键值对的形式，这里以Accept-language为例
+                // 放入请求头的内容，必须是以键值对的形式，这里以Accept-language为例
                 httpGet.addHeader("Accept-Language","zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4");
-                //获取请求头，并用Header数组接收
+                // 获取请求头，并用Header数组接收
                 Header [] reqHeaders = httpGet.getAllHeaders();
                 //遍历Header数组，并打印出来
                 for (int i = 0; i < reqHeaders.length; i++) {
