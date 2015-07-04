@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HelloFacebookSample</string>
+    <string name="facebook_app_name">HelloFBSample</string>
+    <string name="app_id">883357728401186</string>
+</resources>

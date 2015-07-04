@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.test"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="9"/>
+
+    <!-- Facebook 登录需要使用到网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <activity android:label="@string/app_name"
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 声明FacebookActivity。在Facebook登录时，会跳转到FacebookActivity -->
+        <activity android:name="com.facebook.FacebookActivity"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+        <!-- 设置app id。该app id就是在Facebook 官网注册该应用时获取的app id -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+
+        <activity android:name=".Demo1" />
+        <activity android:name=".Demo2" />
+        <activity android:name=".Demo3" />
+        <activity android:name=".Demo4" />
+    </application>
+</manifest>

@@ -24,8 +24,8 @@ import android.util.Log;
 /**
  * FacebookSdk登录和退出
  */
-public class HelloFacebookSampleActivity extends FragmentActivity {
-    private static final String TAG = "##skywang-HelloSample";
+public class Demo1 extends FragmentActivity {
+    private static final String TAG = "##skywang-Demo1";
 
     private CallbackManager mCallbackManager;
     @Override
@@ -39,10 +39,9 @@ public class HelloFacebookSampleActivity extends FragmentActivity {
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         mCallbackManager = CallbackManager.Factory.create();
 
-        setContentView(R.layout.main);
+        setContentView(R.layout.demo1);
 
         LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
-        loginButton.setReadPermissions("user_friends");
         loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
