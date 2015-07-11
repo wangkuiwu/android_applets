@@ -109,7 +109,7 @@ public class Demo1 extends Activity implements BeaconConsumer {
         @Override
         public void didEnterRegion(Region region) {
             Log.i(TAG, "I see an beacon");
-            mHandler.sendMessage(mHandler.obtainMessage(0, new String("\ndidExitRegion region="+region)));
+            mHandler.sendMessage(mHandler.obtainMessage(0, new String("\ndidEnterRegion region="+region)));
         }
 
         @Override
