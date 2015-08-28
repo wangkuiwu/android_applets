@@ -183,6 +183,7 @@ public class MainActivity extends Activity {
   			while(true) {
   				try{
                     mHandler.sendMessage(mHandler.obtainMessage(0, "waiting..."));
+                    // 监听客户端的连接请求。这里是阻塞式监听！
   					socket = mBluetoothServerSocket.accept();
                     break ;
                 } catch (Exception e) {
