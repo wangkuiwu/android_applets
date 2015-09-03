@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title_basic_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#666"
+        android:text="Basic Info"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:gravity="left" />
+
+    <ScrollView
+        android:id="@+id/basic_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title_basic_info" >
+        <TextView
+            android:id="@+id/tv_basic_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:singleLine="false"
+            android:gravity="left|center_vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/title_packge_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basic_info_container"
+        android:layout_alignParentLeft="true"
+        android:background="#666"
+        android:text="Config"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:gravity="left" />
+
+    <!-- 包的大小 -->
+    <LinearLayout
+        android:id="@+id/package_unit_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/title_packge_config"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/tv_package_unit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Package Unit(KB):" />
+        <EditText
+            android:id="@+id/et_package_unit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1" />
+    </LinearLayout>
+
+    <!-- 包的数量 -->
+    <LinearLayout
+        android:id="@+id/package_count_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/package_unit_container"
+        android:layout_alignParentLeft="true" >
+        <TextView
+            android:id="@+id/tv_package_count"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Package Count:" />
+        <EditText
+            android:id="@+id/et_package_count"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="100" />
+    </LinearLayout>
+
+    <!-- 发送间隔 -->
+    <LinearLayout
+        android:id="@+id/package_interval_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/package_count_container"
+        android:layout_alignParentLeft="true" >
+        <TextView
+            android:id="@+id/tv_package_interval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Package Interval(ms):" />
+        <EditText
+            android:id="@+id/et_package_interval"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/package_interval_container"
+        android:layout_alignParentLeft="true"
+        android:background="#666"
+        android:text="Messages"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:gravity="left" />
+
+    <!-- 消息 -->
+    <LinearLayout
+        android:id="@+id/msg_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+        <EditText
+            android:id="@+id/msg"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/send"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="send" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_below="@id/title_msg"
+        android:layout_above="@id/msg_container"
+        android:layout_alignParentLeft="true" 
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" >
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:singleLine="false"
+            android:gravity="left|bottom" />
+    </ScrollView>
+
+</RelativeLayout>

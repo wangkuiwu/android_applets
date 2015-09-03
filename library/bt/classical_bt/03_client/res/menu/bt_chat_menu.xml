@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/start_send"
+        android:showAsAction="ifRoom"
+        android:title="send"/>
+    <item
+        android:id="@+id/stop_send"
+        android:showAsAction="ifRoom"
+        android:title="stop"/>
+
+    <item
+        android:title="..."
+        android:showAsAction="always|withText">
+        <menu>
+        <group>
+            <item
+                android:id="@+id/bt_scan"
+                android:title="Scan"/>
+            <item
+                android:id="@+id/bt_bond"
+                android:title="Bond"/>
+            <item
+                android:id="@+id/bt_unbond"
+                android:title="Unbond"/>
+            <item
+                android:id="@+id/bt_connect"
+                android:title="Connect"/>
+            <item
+                android:id="@+id/bt_disconnect"
+                android:title="Disconnect"/>
+            <item
+                android:id="@+id/bt_auto"
+                android:title="Auto"/>
+            <item
+                android:id="@+id/clear_msg"
+                android:title="Clear"/>
+        </group>
+        </menu>
+    </item>
+</menu>
+

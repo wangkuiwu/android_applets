@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidTest</string>
+
+    <string name="bt_pared_devices">Paired Devices</string>
+    <string name="bt_other_available_devices">Other Available Devices</string>
+    <string name="bt_scan">Scan</string>
+</resources>

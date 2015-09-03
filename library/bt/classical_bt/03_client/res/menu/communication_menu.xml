@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/start_send"
+        android:showAsAction="ifRoom"
+        android:title="send"/>
+    <item
+        android:id="@+id/stop_send"
+        android:showAsAction="ifRoom"
+        android:title="stop"/>
+</menu>

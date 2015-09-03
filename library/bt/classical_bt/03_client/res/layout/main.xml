@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="left"
+        android:singleLine="false"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_bound_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="left"
+        android:singleLine="false"
+        android:background="#222"
+        android:text="bounded devices"
+        android:textSize="16sp" />
+
+    <!-- 已绑定的BT设备列表 -->
+    <ListView
+        android:id="@+id/list_bound_devices"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/tv_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="left"
+        android:singleLine="false"
+        android:background="#222"
+        android:text="new devices"
+        android:textSize="16sp" />
+
+    <!-- 扫描发现的新设备列表 -->
+    <ListView
+        android:id="@+id/list_new_devices"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp" />
+</LinearLayout>
