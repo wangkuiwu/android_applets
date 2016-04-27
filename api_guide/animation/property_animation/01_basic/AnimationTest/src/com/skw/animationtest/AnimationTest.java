@@ -109,7 +109,6 @@ public class AnimationTest extends Activity {
         AnimatorSet anim3 = new AnimatorSet();
         anim3.playSequentially(anim3Down, anim3Up);// 串行
 
-
         // ==== view4的动画 ==== (先下降后上升)
         AnimatorSet anim4 = anim3.clone();
         anim4.setTarget(view4);

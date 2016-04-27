@@ -1,22 +1,28 @@
 buildscript {
-
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.2.3'
     }
 }
 
-apply plugin: 'android'
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
-    //dependencies {
-    //    compile files('libs/android-support-v4.jar')
-    //}
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
 
     sourceSets {
         main {
@@ -44,4 +50,11 @@ android {
     lintOptions {
         abortOnError false
     }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile 'com.android.support:appcompat-v7:22.1.1'
+    //compile 'com.android.support:support-v4:22.1.1'
+    //compile project(':MODULE_Logger')
 }

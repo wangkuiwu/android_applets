@@ -3,20 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/img_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="文本居左"
-        android:background="#ff0000"
-        android:gravity="center"
-        android:layout_gravity="left"
-        android:layout_margin="10dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="文本居中"
-        android:background="#00ff00"
-        android:gravity="center"
-        android:layout_gravity="center"/>
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
